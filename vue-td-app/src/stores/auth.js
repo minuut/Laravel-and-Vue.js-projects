@@ -12,11 +12,12 @@ export const useAuthStore = defineStore("authStore", () => {
 
   // Define an asynchronous function to fetch the user data
   const fetchUser = async () => {
-    // Make a HTTP request to get the user data
-    const { data } = await getUser();
-
-    // Update the user variable with the received data
-    user.value = data;
+    try {
+      const { data } = await getUser();
+      user.value = data;
+    } catch (error) {
+      user.value = null;
+    }
   };
 
   const handleLogin = async (credentials) => {
