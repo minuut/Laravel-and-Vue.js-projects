@@ -25,6 +25,15 @@ class TaskPolicy
     }
 
     /**
+     * Determine whether the user can create the model.
+     */
+    public function create(User $user): bool
+    {
+        return true;
+    }
+
+
+    /**
      * Determine whether the user can update the model.
      */
     public function update(User $user, Task $task): bool

@@ -27,7 +27,7 @@
 
         <span v-else>{{ task.name }}</span>
       </div>
-      <!-- <div class="task-date">24 Feb 12:00</div> -->
+      <div class="task-date">{{ formatDate(task.created_at) }}</div>
     </div>
     <TaskActions 
     @edit="($event) => (isEdit = true)" v-show="!isEdit" 
@@ -36,7 +36,7 @@
 </template>
 
 <script setup>
-import { computed, reactive, ref } from "vue";
+import { computed, ref } from "vue";
 import TaskActions from "./TaskActions.vue";
 
 const props = defineProps({
@@ -76,6 +76,12 @@ const removeTask = (event) => {
    if (confirm("Are you sure?")) {
     emit('removed', props.task);
    }
+};
+
+const formatDate = (dateString) => {
+  const options = { year: "numeric", month: "long", day: "numeric" };
+  const date = new Date(dateString);
+  return date.toLocaleDateString(undefined, options);
 };
 
 </script>

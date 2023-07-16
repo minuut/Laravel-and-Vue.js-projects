@@ -66,7 +66,7 @@ const completedTasksIsVisible = computed(
 );
 
 // Reactive variable for controlling visibility of completed tasks
-const showCompletedTasks = ref(false);
+const showCompletedTasks = ref(false || completedTasksIsVisible.value);
 
 </script>
 
