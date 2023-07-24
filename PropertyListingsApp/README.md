@@ -1,4 +1,4 @@
-## Makelaars app waar particulieren en bedrijven hun huis te koop kunnen aanbieden. Dit is een demo project wat ik in mijn vrije tijd uitbouw voor het vergroten van mijn kennis.
+## Web app waar particulieren en bedrijven hun woningen te koop kunnen aanbieden. (vergelijkbaar met funda) Dit is een demo project wat ik in mijn vrije tijd uitbouw voor het vergroten van mijn Laravel kennis.
 - Je kan een account registreren en ermee inloggen en woningen te koop aanbieden. 
 - Een gebruiker kan alleen zijn of haar eigen geplaatste woningen wijzigen, updaten en verwijderen. 
 - Profielen van andere gebruikers kunnen bezocht worden via het klikken op een link in de advertentie. 
