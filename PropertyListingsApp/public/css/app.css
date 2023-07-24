@@ -1,0 +1,67 @@
+body {
+    background-color: #dedede !important;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+}
+
+// hero
+
+.jumbotron {
+    background-color: #3cb371;
+    background-size: cover;
+}
+
+.jumbotron h1 {
+    font-weight: bold;
+}
+
+// image carousel
+
+.carousel-item img {
+    width: 100%;
+    height: auto;
+    max-height: 500px;
+}
+
+.carousel-control-prev-icon {
+    border-radius: 50%;
+}
+.carousel-control-next-icon {
+    border-radius: 50%;
+}
+
+// forms
+
+.form-group {
+    margin: 0 auto;
+}
+
+.form-background {
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.nav-link button:hover {
+    color: #c3c4c5 !important;
+}
+
+// pagination
+
+.pagination .page-item .page-link {
+    color: black !important;
+}
+
+.pagination .page-item.active .page-link {
+    background-color: #dedede;
+    border-color: white;
+}
+
+.page-link {
+    color: black !important;
+}
