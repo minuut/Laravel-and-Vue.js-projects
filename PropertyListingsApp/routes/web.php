@@ -8,6 +8,7 @@ use App\Http\Controllers\UserProfileController;
 Route::get('/', [ListingController::class, 'index'])->name('listings.index');
 
 Route::middleware('auth')->group(function () {
+    
     Route::prefix('listings')->group(function () {
         Route::get('create', [ListingController::class, 'create'])->name('listings.create');
         Route::post('/', [ListingController::class, 'store'])->name('listings.store');

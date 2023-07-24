@@ -6,11 +6,18 @@ use App\Models\User;
 use Illuminate\Http\Request;
 
 class UserProfileController extends Controller
-{
+{   
+    // own profile
     public function show()
     {
         $user = auth()->user();
         return view('profile.show', compact('user'));
+    }
+    
+    // other profiles
+    public function view(User $user)
+    {
+        return view('profile.view', compact('user'));
     }
 
     public function update(Request $request, User $user)
@@ -49,10 +56,5 @@ class UserProfileController extends Controller
         }
 
         return view('profile.edit');
-    }
-
-    public function view(User $user)
-    {
-        return view('profile.view', compact('user'));
     }
 }

@@ -112,7 +112,6 @@ class ListingController extends Controller
     }
 
     $listing->update($formVeld);
-    //dd($request);
     return back()->with('message', 'Woningdetails zijn gewijzigd!');
   }
 
@@ -132,6 +131,6 @@ class ListingController extends Controller
   // Manage Listings
   public function manage()
   {
-    return view('listings.manage', ['listings' => auth()->user()->PropertyListings()->get()]);
+    return view('listings.manage', ['listings' => auth()->user()->propertyListings()->get()]);
   }
 }
