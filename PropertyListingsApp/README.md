@@ -1,8 +1,10 @@
-## Web app waar particulieren hun woning(en) te koop kunnen aanbieden. (vergelijkbaar met funda) Dit is een demo project wat ik in mijn vrije tijd uitbouw voor het vergroten van mijn Laravel kennis.
-- Je kan een account registreren en ermee inloggen en woningen te koop aanbieden. 
-- Een gebruiker kan alleen zijn of haar eigen geplaatste woningen wijzigen, updaten en verwijderen. 
-- Profielen van andere gebruikers kunnen bezocht worden via het klikken op een link in de advertentie. 
-- Een gebruiker kan alleen zijn of haar eigen 'profiel pagina' gegevens aanpassen.
+## Web app where individuals can offer their house(s) for sale. (similar to Funda) This is a demo project that I am building in my free time to enhance my knowledge of Laravel.
+
+- You can register an account, log in, and offer houses for sale.
+- A user can only edit, update, and delete their own listed houses.
+- Profiles of other users can be visited by clicking a link in the advertisement.
+- A user can only modify their own 'profile page' information.
+
 
 ## Getting Started
 
