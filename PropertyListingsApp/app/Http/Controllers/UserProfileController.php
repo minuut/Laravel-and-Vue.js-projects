@@ -12,7 +12,7 @@ class UserProfileController extends Controller
         $user = auth()->user();
         return view('profile.show', compact('user'));
     }
-    
+
     public function update(Request $request, User $user)
     {
         // Ensure that the authenticated user is the same as the user being updated
@@ -21,7 +21,7 @@ class UserProfileController extends Controller
         }
 
         $validatedData = $request->validate([
-            'contact_information' => 'nullable|string|max:255',
+            'phone_number' => 'nullable|string|max:255',
             'profile_picture' => 'nullable|image|mimes:jpeg,png,jpg,gif|max:2048',
             'short_bio' => 'nullable|string|max:500',
         ]);
@@ -34,7 +34,7 @@ class UserProfileController extends Controller
         }
 
         $user->update([
-            'contact_information' => $validatedData['contact_information'],
+            'phone_number' => $validatedData['phone_number'],
             'short_bio' => $validatedData['short_bio'],
         ]);
 
@@ -47,13 +47,12 @@ class UserProfileController extends Controller
         if (auth()->id() !== $user->id) {
             abort(403, 'Unauthorized action');
         }
-    
+
         return view('profile.edit');
     }
-    
+
     public function view(User $user)
     {
         return view('profile.view', compact('user'));
     }
 }
-
