@@ -1,6 +1,6 @@
 ## What's in this repository
 
-- Property listings app I've been slowly working on and expanding. 
+- Property listings app (Full CRUD with profiles). 
   [Property Listings App](https://github.com/minuut/Laravel-and-Vue.js-course-projects/tree/main/PropertyListingsApp)
 
 - Simple Laravel 10 API.
