@@ -9,8 +9,8 @@ Route::get('/', [ListingController::class, 'index'])->name('listings.index');
 
 Route::middleware('auth')->group(function () {
     
-    Route::prefix('listings')->group(function () {
-        Route::get('create', [ListingController::class, 'create'])->name('listings.create');
+    Route::prefix('listings')->group(function () {    
+        Route::get('create', [ListingController::class, 'create'])->name('listings.create'); 
         Route::post('/', [ListingController::class, 'store'])->name('listings.store');
         Route::get('{listing}/edit', [ListingController::class, 'edit'])->name('listings.edit');
         Route::put('{listing}', [ListingController::class, 'update'])->name('listings.update');
@@ -28,7 +28,7 @@ Route::middleware('auth')->group(function () {
     
     Route::post('/logout', [UserController::class, 'logout'])->name('logout');
 });
-
+ 
 Route::middleware('guest')->group(function () {
     Route::get('/register', [UserController::class, 'create'])->name('register');
     Route::post('/users', [UserController::class, 'store'])->name('users.store');
