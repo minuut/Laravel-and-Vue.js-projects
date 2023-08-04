@@ -8,3 +8,6 @@
 
 - Vue TODO app with a Pinia store with login/registration that utilizes the API.
   [Vue TODO App](https://github.com/minuut/Laravel-and-Vue.js-course-projects/tree/main/vue-td-app)
+
+- Filament Admin Panel with roles (unfinished)
+  [Filament Admin Panel](https://github.com/minuut/Laravel-and-Vue.js-course-projects/tree/main/FilamentAdminPanel)
